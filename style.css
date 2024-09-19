@@ -21,7 +21,27 @@ main {
     background: var(--main-background);
 }
 
-/*────────────────── 
+/* style.css */
+@keyframes slidein {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+p {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+p.animate {
+    opacity: 1;
+    animation: 3s alternate slidein;
+}
+
+/*──────────────────
        header
 ──────────────────*/
 
@@ -156,7 +176,7 @@ h3 {
 }
 
 /*──────────────────
-       Skills
+       Habilidades
 ──────────────────*/
 #habilidades {
     display: flex;
