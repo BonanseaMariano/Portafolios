@@ -1,10 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Responsive Personal Portfolio Website Design | Codehal</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
+
 <body>
-$END$
+
+<!-- header design -->
+<header class="header">
+    <a href="#" class="logo">
+        <img src="images/logo-no-background.png" alt="Icono" class="icon">
+        Mariano Bonansea
+    </a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#about">Sobre mi</a>
+        <a href="#services">Servicios</a>
+        <a href="#portfolio">Portafolio</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+</header>
+
+<!-- home section design -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hola, soy</h3>
+        <h1>Mariano Bonansea</h1>
+        <h3>Y soy un <span>Desarrollador Android</span></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis distinctio exercitationem, impedit,
+            molestiae, mollitia odio quibusdam quisquam rerum suscipit unde vitae. Aliquid assumenda dicta
+            exercitationem hic labore nemo, tempore?
+        </p>
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <a href="#" class="btn">Descargar CV</a>
+    </div>
+    <div class="home-img">
+        <img src="images/Inicio.png" alt="Imagen-inicio"/>
+    </div>
+</section>
+
+<!-- about section design -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/Sobre-mi.jpg" alt="Imagen-Sobre-mi"/>
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">Sobre <span>mi</span></h2>
+        <h3>Desarrollador Android</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis distinctio exercitationem, impedit,
+            molestiae, mollitia odio quibusdam quisquam rerum suscipit unde vitae. Aliquid assumenda dicta
+            exercitationem hic labore nemo, tempore?
+        </p>
+        <a href="#" class="btn">Ver mas</a>
+    </div>
+
+</section>
+
+<!-- services section design -->
+<section class="services" id="services">
+    <h2 class="heading">Mis <span>Servicios</span></h2>
+    <div class="services-container">
+
+        <div class="services-box">
+            <i class='bx bxl-android'></i>
+            <h3>Desarrollo de aplicaciones Android</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis distinctio exercitationem, impedit,
+                molestiae, mollitia odio quibusdam quisquam rerum suscipit unde vitae. Aliquid assumenda dicta
+                exercitationem hic labore nemo, tempore?
+            </p>
+            <a href="#" class="btn">Ver mas</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Desarrollo Web</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis distinctio exercitationem, impedit,
+                molestiae, mollitia odio quibusdam quisquam rerum suscipit unde vitae. Aliquid assumenda dicta
+                exercitationem hic labore nemo, tempore?
+            </p>
+            <a href="#" class="btn">Ver mas</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- portfolio section design -->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Mis <span>Proyectos</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="images/portfolio1.jpg" alt="Imagen-Portafolio-1"/>
+            <div class="portfolio-layer">
+                <h4>Proyecto 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis distinctio exercitationem,
+                    impedit, molestiae, mollitia odio quibusdam quisquam rerum suscipit unde vitae. Aliquid assumenda
+                    dicta exercitationem hic labore nemo, tempore?
+                </p>
+                <a href="#" class="btn"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/portfolio2.jpg" alt="Imagen-Portafolio-1"/>
+            <div class="portfolio-layer">
+                <h4>Proyecto 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis distinctio exercitationem,
+                    impedit, molestiae, mollitia odio quibusdam quisquam rerum suscipit unde vitae. Aliquid assumenda
+                    dicta exercitationem hic labore nemo, tempore?
+                </p>
+                <a href="#" class="btn"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/portfolio3.jpg" alt="Imagen-Portafolio-1"/>
+            <div class="portfolio-layer">
+                <h4>Proyecto 3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis distinctio exercitationem,
+                    impedit, molestiae, mollitia odio quibusdam quisquam rerum suscipit unde vitae. Aliquid assumenda
+                    dicta exercitationem hic labore nemo, tempore?
+                </p>
+                <a href="#" class="btn"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/portfolio4.jpg" alt="Imagen-Portafolio-1"/>
+            <div class="portfolio-layer">
+                <h4>Proyecto 4</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis distinctio exercitationem,
+                    impedit, molestiae, mollitia odio quibusdam quisquam rerum suscipit unde vitae. Aliquid assumenda
+                    dicta exercitationem hic labore nemo, tempore?
+                </p>
+                <a href="#" class="btn"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/portfolio5.jpg" alt="Imagen-Portafolio-1"/>
+            <div class="portfolio-layer">
+                <h4>Proyecto 5</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis distinctio exercitationem,
+                    impedit, molestiae, mollitia odio quibusdam quisquam rerum suscipit unde vitae. Aliquid assumenda
+                    dicta exercitationem hic labore nemo, tempore?
+                </p>
+                <a href="#" class="btn"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="images/portfolio6.jpg" alt="Imagen-Portafolio-1"/>
+            <div class="portfolio-layer">
+                <h4>Proyecto 6</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis distinctio exercitationem,
+                    impedit, molestiae, mollitia odio quibusdam quisquam rerum suscipit unde vitae. Aliquid assumenda
+                    dicta exercitationem hic labore nemo, tempore?
+                </p>
+                <a href="#" class="btn"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact section design -->
+
+<!-- footer design -->
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- typed js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- custom js -->
+<script src="js/script.js"></script>
 </body>
 </html>
