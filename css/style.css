@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+/* General */
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +39,7 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+/* HEADER */
 .header {
     position: fixed;
     top: 0;
@@ -88,6 +90,7 @@ section {
     display: none;
 }
 
+/* HOME */
 .home {
     display: flex;
     justify-content: center;
@@ -171,6 +174,7 @@ span {
     color: var(--main-color);
 }
 
+/* ABOUT */
 .about {
     display: flex;
     justify-content: center;
@@ -205,6 +209,7 @@ span {
     margin: 2rem 0 3rem;
 }
 
+/* SERVICES */
 .services h2 {
     margin-bottom: 5rem;
 }
@@ -250,6 +255,7 @@ span {
     margin: 1rem 0 3rem;
 }
 
+/* PORTFOLIO */
 .portfolio {
     background-color: var(--second-bg-color);
 }
@@ -326,47 +332,54 @@ span {
     color: var(--second-bg-color);
 }
 
+/* CONTACT */
 .contact h2 {
     margin-bottom: 5rem;
 }
 
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
+.social-media-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Distribuye equitativamente el espacio */
+    gap: 1.5rem; /* Ajusta el espacio entre las tarjetas */
+    justify-items: center;
+    align-items: center;
 }
 
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
+.social-media-box {
     background: var(--second-bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
+    padding: 2rem; /* Aumenta el padding de las tarjetas */
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
 }
 
-.contact form .input-box input {
-    width: 49%;
+.social-media-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1.5rem var(--main-color);
 }
 
-.contact form textarea {
-    resize: none;
+.social-media-box a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
+.social-media-box i {
+    font-size: 4rem; /* Aumenta el tamaño del icono */
+    margin-bottom: 1rem; /* Ajusta el margen inferior del icono */
+    color: var(--main-color);
 }
 
+.social-media-box span {
+    font-size: 1.8rem; /* Aumenta el tamaño del texto */
+    font-weight: 600;
+}
+
+/* FOOTER */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -427,10 +440,6 @@ span {
 
     .portfolio {
         padding-bottom: 7rem;
-    }
-
-    .contact {
-        min-height: auto;
     }
 
     .footer {
@@ -503,6 +512,10 @@ span {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .social-media-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 617px) {
@@ -514,10 +527,6 @@ span {
 @media (max-width: 450px){
     html {
         font-size: 50%;
-    }
-
-    .contact form .input-box input {
-        width: 100%;
     }
 }
 
