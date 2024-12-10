@@ -28,15 +28,6 @@ La página se encuentra desplegada a través de Netlify y se puede visualizar en
 ```plaintext
 portafolio/
 ├── images/
-│   ├── Inicio.png
-│   ├── logo-no-background.png
-│   ├── Sobre-mi.jpg
-│   ├── FrontEnd-Store.png
-│   ├── portfolio2.jpg
-│   ├── portfolio3.jpg
-│   ├── portfolio4.jpg
-│   ├── portfolio5.jpg
-│   ├── portfolio6.jpg
 ├── css/
 │   └── style.css
 ├── js/
