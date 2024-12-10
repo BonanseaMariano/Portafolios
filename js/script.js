@@ -3,9 +3,16 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
+    if (navbar.style.height === '' || navbar.style.height === '0px') { // if navbar is closed
+        navbar.style.height = navbar.scrollHeight + 'px';
+        navbar.classList.add('active');
+    } else { // if navbar is open
+        navbar.style.height = '0px';
+        navbar.classList.remove('active');
+    }
+    menuIcon.classList.toggle('bx-x'); // toggle icon
+};
+
 
 /*==================== scroll sections active link ====================*/
 let sections = document.querySelectorAll('section');
@@ -33,6 +40,7 @@ window.onscroll = () => {
     /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
+    navbar.style.height = '0px';
 };
 
 
@@ -43,10 +51,10 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .social-media-box', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'left' });
+ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .social-media-box', {origin: 'bottom'});
+ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
+ScrollReveal().reveal('.home-content p, .about-content', {origin: 'left'});
 
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text', {

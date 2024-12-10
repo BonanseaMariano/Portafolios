@@ -145,7 +145,7 @@ span {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 3rem 1.5rem;
     transition: .5s ease;
 }
 
@@ -351,15 +351,15 @@ span {
 
 .social-media-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Distribuye equitativamente el espacio */
-    gap: 1.5rem; /* Ajusta el espacio entre las tarjetas */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
     justify-items: center;
     align-items: center;
 }
 
 .social-media-box {
     background: var(--second-bg-color);
-    padding: 2rem; /* Aumenta el padding de las tarjetas */
+    padding: 2rem;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -381,13 +381,13 @@ span {
 }
 
 .social-media-box i {
-    font-size: 4rem; /* Aumenta el tamaño del icono */
-    margin-bottom: 1rem; /* Ajusta el margen inferior del icono */
+    font-size: 4rem;
+    margin-bottom: 1rem;
     color: var(--main-color);
 }
 
 .social-media-box span {
-    font-size: 1.8rem; /* Aumenta el tamaño del texto */
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
@@ -469,15 +469,19 @@ span {
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 3%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease, box-shadow 0.5s ease, border-top 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
         background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     .navbar.active {
-        display: block;
+        height: auto;
+        padding: 1rem 3%;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     }
 
     .navbar a {
@@ -531,6 +535,14 @@ span {
 }
 
 @media (max-width: 617px) {
+    section {
+        text-align: center;
+    }
+
+    .about-content .heading {
+        text-align: center;
+    }
+
     .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -543,6 +555,13 @@ span {
 }
 
 @media (max-width: 365px) {
+    .home h1{
+        font-size: 4rem;
+    }
+    .home h3{
+        font-size: 2.1rem;
+    }
+
     .home-img img {
         width: 90vw;
     }
